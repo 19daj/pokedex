@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgba(255, 123, 0, 0.788);
+}
+
+a.search {
+    margin-top: 4px;
+}
+
+#pokemon-logo {
+    width: 40%;
+}
+
+h1 {
+    color: blue;
+}
+
+#namePoke {
+    font-weight: bold;
+    color: blue;
+}
+
+.container-pokemon {
+    border: 1px solid red;
+    display: inline-block;
+}
+
+.pok {
+    width: 100%;
+    height: inherit;
+}
+
+#pokedex {
+    font-size: 40px;
+    color: blue;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width:425px) {
+    #pokedex {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/assets/materialize.min.css">
+    <title>POKEDEX</title>
+</head>
+<body>
+    <div class="row center-align">
+        <img id="pokemon-logo" class="responsive-img" src="assets/images/logo-Pokemon.png" alt="pokemon logo">
+    </div>
+    <div class="row center-align">
+        <p id="pokedex">POKEDEX</p>
+    </div>
+    <br>
+    <div class="row">
+        <input placeholder="Pokemon" id="name-pokemon" type="text" class="validate col s3 offset-s3">
+        <a id="poke-bttn" class="waves-effect waves-light btn btn-small modal-trigger col s3 search blue darken-4" href="#modalPokemones">Search</a>
+    </div>
+    <div class="row">
+        <div id="pokemon-cont" class="col s12 center-align"></div>
+    </div>
+    <!--Modal información pokemon-->
+    <div id="modalPokemones" class="modal">
+        <div class="modal-content center-align">
+            <h4 id="namePok"></h4>
+            <figure id="image"></figure>
+            <p id="type">Por favor escribe el nombre de un pokemon</p>
+            <p id="ability1"></p>
+            <p id="ability2"></p>
+            <p id="speed"></p>
+            <p id="specialDefend"></p>
+            <p id="specialAttack"></p>
+            <p id="attack"></p>
+            <p id="defense"></p>
+            <p id="hp"></p>
+            <p id="weight"></p>
+            <p id="height"></p>
+            <p id="identificator"></p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" id="ok" class="modal-close waves-effect waves-light btn blue darken-4">OK</a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
+    <script src="js/assets/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
